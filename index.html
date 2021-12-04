@@ -4,53 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harmonious massage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
+    <title>St. Rafael Revival massages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     
     <div class="wrapper">
-      <nav class="menu">
 
-        <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-        <label for="menu-checkbox" class="menu__toggler">☰</label>
+      <header class="header">
+        <div class="header__language">
+          <a href="">EN</a>
+          <a href="">CZ</a>
+        </div>
 
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#">Úvod</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Produkty</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">O nás</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Recenze</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
+      <div class="header__inner">
+				<div class="header__left">
+					<div class="header__logo">St. Rafael Revival massages</div>
+        </div>
+
+
+        <nav class="menu">
+
+          <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+          <label for="menu-checkbox" class="menu__toggler">☰</label>
+
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#">Úvod</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Služby</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">O nás</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Recenze</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
+          </ul>
+
+        </nav>
+
+      </div>
+
+      <div class="header__image"></div>
+
+
+      <section class="introduction">
+        <div class="introduction__content">
+
+          <h1>Mobilní masáže v Londýně</h2>
+
+          <p>Nechte se namasírovat v pohodlí Vašeho domova.</p>
+
+          <p>Jsem mobilní certikovaná masérka, která poskytuje zdravotní, sportovní či těhotenské masáže přizpůsobené Vašim konkrétním přáním.</p>
+
+          <p>Brzy budu nabízet i kurzy masáží novorozeňat, kdy naučím maminky, jak zahřát a protáhnout tělíčka svých miminek.</p>
+          
+          <p>10% z každé ceny masáže daruji na charitu. Výběr charity je zatím v procesu a bude brzy upřesněna.</p>
+        </div>
+      </section>
+
+      <section class="introduction__testimonials">
+          <h1>Hodnocení klientů</h1>
+
+          <p>Těší mě, když jsou moji klienti s masážemi spokojeni. Výběr z recenzí si můžete přečíst níže.</p>
+        <div class="testimonials__grid">
+          <div class="testimonials__selection">
+            <p class="testimonials__name">Augustína V.</p>
+            <p>Jaroslava mi vždy udělá úžasnou masáž zad a ramenou. Léta se k ní vracím a vždy jsem naprosto spokojená.</p>
+          </div>
+
+          <div class="testimonials__selection">
+            <p class="testimonials__name">Juraj D.</p>
+            <p>Skvělá masáž od Slávky. Ještě několik dní po masáži jsem se cítil lépe. Nemohu si ji vynachválit a rozhodně ji všem doporučuji.</p>
+          </div>
+
+          <div class="testimonials__selection">
+            <p class="testimonials__name">Vanessa A.</p>
+            <p>Jaroslavu mi doporučila kamarádka a byla to dobrá volba. Slávka masíruje s velkou péčí, chová se velmi profesionálně a pomohla mi ulevit od bolesti zad.</p>
+          </div>
+        </div>
+      </section>
+      
+
+
+
+
+
+
+
+
+      <section class="services">
+
+        <h1>Therapies practised</h2>
+
+        <ul class="services__list">
+          <li class="services__item"><a class="services__link" href="#">Advanced massage</a></li>
+          <li class="services__item"><a class="services__link" href="#">Body massage</a></li>
+          <li class="services__item"><a class="services__link" href="#">Cupping</a></li>
+          <li class="services__item"><a class="services__link" href="#">Deep tissue massage</a></li>
+          <li class="services__item"><a class="services__link" href="#">Ear candling</a></li>
+          <li class="services__item"><a class="services__link" href="#">Indian head massage</a></li>
+          <li class="services__item"><a class="services__link" href="#">Manual lymphatic drainage</a></li>
+          <li class="services__item"><a class="services__link" href="#">Moxibustion</a></li>
+          <li class="services__item"><a class="services__link" href="#">Pregnancy massage</a></li>
+          <li class="services__item"><a class="services__link" href="#">Seated acupressure massage</a></li>
         </ul>
 
-      </nav>
+      </section>
 
 
 
-      <h2>Therapies practised</h2>
-      
-      <ul class="services_list">
-      Advanced massage
-      Body massage
-      Cupping
-      Deep tissue massage
-      Ear candling
-      Indian head massage
-      Manual lymphatic drainage
-      Moxibustion
-      Pregnancy massage
-      Seated acupressure massage
-      </ul>
 
-
-      <h2>About me</h2>
+      <h1>About me</h2>
 
       <p>
         Hi. I am Jara, a mobile massage therapist based in London.
@@ -86,24 +150,22 @@
                   
                   <h2>Kontakt</h2>
                       
-                  <p>
-                  <span class="footer__title">Telefon:</span><br>
+                  <p class="footer__title">Telefon:<br>
                   +44 739 200 48 73
                   </p>
 
-                  <p>
-                  <span class="footer__title">E-mail:</span><br>
+                  <p class="footer__title">E-mail:<br>
                   <a href="mailto:000000000000000000000">penzion@uvodyyyyyyyyyyyyyyyyyyyyyyyy.cz</a>
                   </p>
                       
               </div>
 
               <div class="footer__grid-column">
-                  <h2>Sledujte nás</h2>
+                  <h2>Najdete nás také na</h2>
 
-                  <a href="https://www.fht.org.uk/users/drobna149837"><img class="footer__image--rectangle" src="images/fht_logo.png" alt="Ikona FHT"></a>
+                  <a href="https://www.fht.org.uk/users/drobna149837"><img class="footer__image" src="images/logos/fht_logo.png" alt="Ikona FHT"></a>
                     
-                  <a href="https://uk.linkedin.com/in/jaroslava-drobna-9b357133"><img class="footer__image--square" src="images/linkedin-icon-2-logo-svgrepo-com.svg" alt="Ikona LinkedIn"></a>
+                  <a href="https://uk.linkedin.com/in/jaroslava-drobna-9b357133"><img class="footer__image" src="images/logos/linkedin-icon-2-logo-svgrepo-com.svg" alt="Ikona LinkedIn"></a>
               </div>
 
           </div>
