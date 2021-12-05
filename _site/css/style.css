@@ -46,11 +46,17 @@ section {
 	text-align: center;
 }
 
+
 .header__language {
 	background-color: var(--accent);
 	text-align: right;
 	padding: var(--spacer);
 }
+
+/* 
+nejsem schopna propojit stránku s anglickým překladem ve složce EN. Co dělám špatně?
+*/
+
 
 .header__language a {
 	margin-right: var(--spacer);
@@ -62,6 +68,7 @@ section {
 .header__language a:focus {
 	font-weight: bold;
 }
+
 
 .header__logo {
 	font-size: 2rem;
@@ -121,45 +128,6 @@ background-color: var(--accent);
 	 */
 }
 
-
-
-@media screen and (max-width: 799px) {
-.menu__checkbox:checked ~ .menu__list {
-	display: block;
-	}
-
-}
-
-@media screen and (min-width: 800px) {
-
-	.menu__list {
-		display: flex;
-	}
-
-	.menu__toggler {
-		display: none;
-	}
-
-	.menu__item {
-		border-bottom: 0;
-	}
-
-	.menu__item:not(:last-child) {
-		border-right: 1px solid black;
-	}
-
-	.grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: var(--spacer-double);
-	}
-
-
-
-
-
-}
-
 .header__image {
 	height: 350px;
 	background-image: url(/Images/Jaras/Shoulder_massage.jpg);
@@ -172,6 +140,7 @@ background-color: var(--accent);
 	když je obrazovka menší, tak se mi obrázek ukazuje celý nehezky, já ho chci vystřižený tak, jako když je obrazovka veliká. Jak to udělám?
 	 */
 }
+
 
 .testimonials__selection,
 .contact__title {
@@ -188,6 +157,16 @@ background-color: var(--accent);
 	background-color: black;
 	height: 1px;
 }
+
+
+.glide__arrow {
+	font-size: 2rem;
+}
+
+/* 
+ s glidem mám problém, že se mi nechce hýbat a ani se mi neukazují 3 recenze najednou, jak jsem zadala do perView
+ */
+
 
 .service__description--left,
 .service__description--right {
@@ -216,7 +195,6 @@ plus opět problém s velikostí fotek
 .other-services li {
 	line-height: var(--spacer-double);
 }
-
 
 
 .pricing {
@@ -257,6 +235,7 @@ th {
 	padding-top: var(--spacer);
 	padding-bottom: var(--spacer);
 }
+
 
 .about__content {
 	grid-column: span 2;
@@ -324,4 +303,36 @@ th {
 
 .footer {
 	margin-top: var(--spacer-double);
+}
+
+@media screen and (max-width: 799px) {
+	.menu__checkbox:checked ~ .menu__list {
+		display: block;
+		}
+	
+	}
+	
+@media screen and (min-width: 800px) {
+
+	.menu__list {
+		display: flex;
+	}
+
+	.menu__toggler {
+		display: none;
+	}
+
+	.menu__item {
+		border-bottom: 0;
+	}
+
+	.menu__item:not(:last-child) {
+		border-right: 1px solid black;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--spacer-double);
+	}
 }

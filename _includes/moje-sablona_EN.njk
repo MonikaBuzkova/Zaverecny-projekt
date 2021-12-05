@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/glide.core.min.css"/>
-    <link rel="stylesheet" href="/css/glide.theme.min.css"/>
+    <link rel="stylesheet" href="/css/style.css/">
+    <link rel="stylesheet" href="/css/glide.core.min.css/">
+    <link rel="stylesheet" href="/css/glide.theme.min.css/">
   </head>
 
   <body>
@@ -19,8 +19,8 @@
 
       <header class="header">
         <div class="header__language">
-          <a href="">EN</a>
-          <a href="">CZ</a>
+          <a href="/index_en/">EN</a>
+          <a href="/">CZ</a>
         </div>
 
     <div class="header__inner">
@@ -35,11 +35,11 @@
           <label for="menu-checkbox" class="menu__toggler">☰</label>
 
           <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="/">Úvod</a></li>
-            <li class="menu__item"><a class="menu__link" href="/sluzby/">Služby</a></li>
-            <li class="menu__item"><a class="menu__link" href="/cenik/">Ceník</a></li>
-            <li class="menu__item"><a class="menu__link" href="/omne/">O mně</a></li>
-            <li class="menu__item"><a class="menu__link" href="/kontakt/">Kontakt</a></li>
+            <li class="menu__item"><a class="menu__link" href="/index_en/">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="/services/">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="/prices/">Prices</a></li>
+            <li class="menu__item"><a class="menu__link" href="/aboutme/">About me</a></li>
+            <li class="menu__item"><a class="menu__link" href="/contact/">Contact</a></li>
           </ul>
 
         </nav>
@@ -49,48 +49,7 @@
       <div class="header__image"></div>
 
 
-      
-
-<section>
-    <h1>Otevírací doba</h1>
-    <p>Nemám stanovené otevírací hodiny. Pracuji každý den včetně víkendů a ráda se přizpůsobím Vašemu nejvhodnějšímu termínu.</p>
-
-    <h1>Dotazy</h1>
-    <p>Pokud máte jakékoliv otázky nebo byste si rádi zarezervovali masáž, neváhejte mě kontaktovat na mé e-mailové adrese či na telefon.</p>
-
-    <h1>Recenze</h1>
-    <p>Těší mě, když jste s mými službami spokojeni. Vítám ale každou zpětnou vazbu, abych se Vám mohlo v budoucnosti lépe věnovat. Pošlete mi prosím Vaši recenzi na e-mail či pomocí SMS.</p>
-</section>
-
-<section class="contact">
-    <div class="contact__info grid">
-        <div class="contact__title">
-            <h2>Telefon</h2>
-            <p>+44 739 200 48 73</p>
-        </div>
-
-
-        <div class="contact__title">
-            <h2>E-mail</h2>
-            <p><a href="mailto:jaroslavad26@gmail.com">jaroslavad26@gmail.com</a></p>
-        </div> 
-    
-        <div class="contact__title">
-            <h2>Číslo bankovního účtu</h2>
-            <p>1574096018/3030</p>
-        </div>
-
-        <div class="contact__title">
-            <h2>Dále přijímáme platby</h2>
-            <p>V hotovosti</p>
-            <p>Kreditní kartou</p>
-            <p>PayPal</p>
-            <p>Monzo</p>
-        </div>
-
-    </div>
-
-</section>
+      {{content | safe}}
 
     
 
@@ -99,9 +58,9 @@
 
               <div class="footer__grid-column">
                   
-                  <h2>Kontakt</h2>
+                  <h2>Contact</h2>
                       
-                  <p class="footer__title">Telefon:<br>
+                  <p class="footer__title">Phone:<br>
                   +44 739 200 48 73
                   </p>
 
@@ -112,7 +71,7 @@
               </div>
 
               <div class="footer__grid-column">
-                  <h2>Najdete nás také na</h2>
+                  <h2>Visit us</h2>
 
                   <a href="https://www.fht.org.uk/users/drobna149837"><img class="footer__image" src="/images/logos/fht_logo.png" alt="Ikona FHT"></a>
                     
