@@ -296,13 +296,6 @@ th {
 
 }
 
-.map {
-	margin-bottom: var(--spacer-double);
-	/* margin: auto; */
-	/* 
-	proč mi nejde vycentrovat mapu doprostřed stránky?
-	 */
-}
 
 .footer__grid {
 	padding: var(--spacer);
