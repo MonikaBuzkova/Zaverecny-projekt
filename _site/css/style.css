@@ -12,7 +12,7 @@ html { box-sizing: border-box; }
 body {
 	margin: 0;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 22px;
+	font-size: 18px;
 	line-height: var(--spacer-double);
 }
 
@@ -27,11 +27,11 @@ h1, h2 {
 }
 
 h1 { 
-    font-size: 2rem; 
+    font-size: 1.5rem; 
 }
 
 h2 { 
-    font-size: 1.5rem; 
+    font-size: 1.25rem; 
 }
 
 section {
@@ -55,7 +55,7 @@ section {
 .header__language a {
 	margin-right: var(--spacer);
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 .header__language a:hover,
@@ -64,7 +64,7 @@ section {
 }
 
 .header__logo {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: bold;
 	text-shadow: 0 2px 7px rgb(131, 158, 132);
 	padding: var(--spacer);
