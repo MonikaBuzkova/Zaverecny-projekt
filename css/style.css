@@ -262,17 +262,7 @@ th {
 }
 
 
-.footer__grid {
-	padding: var(--spacer);
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: var(--spacer-double);
-	background-color: var(--accent);
-}
 
-.footer__grid-column {
-	margin: var(--spacer);
-}
 
 .footer__image {
 	height: 80px;
@@ -289,7 +279,11 @@ th {
 
 .footer {
 	margin-top: var(--spacer-double);
+	background-color: var(--accent);
+	padding: var(--spacer-double);
 }
+
+
 
 @media screen and (max-width: 799px) {
 	.menu__checkbox:checked ~ .menu__list {
@@ -333,5 +327,15 @@ th {
 		min-width: 300px;
 		max-height: 500px;
 		margin: auto;
+	}
+
+	.footer__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: var(--spacer-double);
+	}
+	
+	.footer__grid-column {
+		margin: var(--spacer);
 	}
 }
