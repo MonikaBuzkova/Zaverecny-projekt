@@ -53,20 +53,20 @@ section {
 	padding: var(--spacer);
 }
 
-/* 
-nejsem schopna propojit stránku s anglickým překladem ve složce EN. Co dělám špatně?
-*/
-
-
 .header__language a {
 	margin-right: var(--spacer);
 	text-decoration: none;
 	font-size: 1.25rem;
+	color: black;
 }
 
 .header__language a:hover,
 .header__language a:focus {
 	font-weight: bold;
+}
+
+.header__language a:visited {
+	color: black;
 }
 
 
@@ -84,6 +84,7 @@ nejsem schopna propojit stránku s anglickým překladem ve složce EN. Co děl�
 	padding: var(--spacer);
 	align-items: flex-end;
 	justify-content: space-between;
+	vertical-align: middle;
 }
 
 .menu__checkbox {
@@ -120,11 +121,9 @@ background-color: var(--accent);
 	font-size: 1.5rem;
 	
 	
-	margin-bottom: var(--spacer);
-	vertical-align: middle;
 	
 	/* 
-	proč mi nejde posunout dorpostřed řádku menu ani znak pro rozjížděcí menu? ani ten margin nefunguje
+	proč mi stále nejde posunout dorpostřed řádku menu ani znak pro rozjížděcí menu? 
 	 */
 }
 
@@ -135,10 +134,6 @@ background-color: var(--accent);
 	background-size: cover;
 	background-position: 0% 45%;
 	margin-bottom: var(--spacer-double);
-
-	/* 
-	když je obrazovka menší, tak se mi obrázek ukazuje celý nehezky, já ho chci vystřižený tak, jako když je obrazovka veliká. Jak to udělám?
-	 */
 }
 
 
@@ -161,26 +156,23 @@ background-color: var(--accent);
 
 .glide__arrow {
 	font-size: 2rem;
+	margin-top: 170px;
 }
 
-/* 
- s glidem mám problém, že se mi nechce hýbat a ani se mi neukazují 3 recenze najednou, jak jsem zadala do perView
- */
-
-
-.service__description--left,
-.service__description--right {
-	grid-column: span 2;
-	padding: var(--spacer);
-}
 
 .service__image--left,
 .service__image--right {
-	height: 100%;
-	width: 100%;
+
+ 	width: 400px;
+	height: 400px;
+
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+/* 
+jelikož jsem měla fotky na výšku i šířku, ořezala jsem všechny na kompromisní čtverec. když to ale je v mobilní verzi a obrazovka se začne zvětšovat, tak to vypadá špatně. Dá se to nějak vyřešit, nebo musím nechat fotky neresponzivní a prostě fixně čtvercové?
+*/
 
 .service__image--right {
 	grid-column-start: 3;
@@ -188,7 +180,6 @@ background-color: var(--accent);
 
 /* 
 zde mám problém, jak vyřešit, aby se vždy střídalo, že je vlevo fotka a vpravo text a pak obráceně, vlevo text a pravo fotka
-plus opět problém s velikostí fotek 
 */
 
 
@@ -244,8 +235,8 @@ th {
 .about__image {
 	height: 100%;
 	width: 100%;
-	min-height: 300px;
-	max-width: 260px;
+	min-height: 400px;
+	max-width: 350px;
 	background-image: url(/Images/Jaras/Jaroslava_Drobna.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -253,11 +244,6 @@ th {
 	margin: auto;
 	margin-bottom: var(--spacer-double);
 }
-
-	/* 
-	Opět mám problém s oříznutím fotky, na této je to vidět malinko vpravo a vlevo, ale nevím, co s tím.
-	 */
-
 
 
 .contact__grid h1 {
@@ -334,5 +320,18 @@ th {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: var(--spacer-double);
+		padding-bottom: var(--spacer-double);
+	}
+
+	.service__description--left,
+	.service__description--right {
+		grid-column: span 2;
+		padding: var(--spacer);
+	}
+
+	.about__image {
+		min-width: 300px;
+		max-height: 500px;
+		margin: auto;
 	}
 }
