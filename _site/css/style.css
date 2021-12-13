@@ -119,8 +119,6 @@ background-color: var(--accent);
 .menu__toggler {
 	cursor: pointer;
 	font-size: 1.5rem;
-	
-
 }
 
 .header__image {
@@ -155,19 +153,15 @@ background-color: var(--accent);
 	margin-top: 170px;
 }
 
+.service {
+	display: block;
+}
 
-.service__image--left,
-.service__image--right {
+.service__image {
  	width: 100%;
 	max-width: 300px;
 	object-fit: cover;
 }
-
-
-.service__image--right {
-	grid-column-start: 3;
-}
-
 
 .other-services li {
 	line-height: var(--spacer-double);
@@ -249,8 +243,6 @@ th {
 }
 
 
-
-
 .footer__image {
 	height: 80px;
 	object-fit: cover;
@@ -309,15 +301,21 @@ th {
 		padding-bottom: var(--spacer-double);
 	}
 
-	.service__description--left,
-	.service__description--right {
-		grid-column: span 2;
-		padding: var(--spacer);
+	.service {
+		display: flex;
+		padding-bottom: var(--spacer-double);
 	}
 
-	.service__image--left,
-	.service__image--right {
-		max-width: none;
+	.service:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+
+	.service:nth-child(odd) .service__image {
+		padding-left: var(--spacer-double);
+	}
+
+	.service:nth-child(even) .service__image {
+		padding-right: var(--spacer-double);
 	}
 
 	.pricing__massages,
