@@ -1,341 +1,335 @@
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
 
 :root {
-	--primary: #e5fae4;
-	--accent: #9bd498;
+  --primary: #e5fae4;
+  --accent: #9bd498;
 
-	--spacer: 1rem;
-	--spacer-double: 2rem;
+  --spacer: 1rem;
+  --spacer-double: 2rem;
 }
 
 body {
-	margin: 0;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 18px;
-	line-height: var(--spacer-double);
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: var(--spacer-double);
 }
 
 .wrapper {
-	max-width: 66rem;
-	margin: 0 auto;
-	background-color: var(--primary);
+  max-width: 66rem;
+  margin: 0 auto;
+  background-color: var(--primary);
 }
 
-h1, h2 {
-	font-weight: bold;
+h1,
+h2 {
+  font-weight: bold;
 }
 
-h1 { 
-    font-size: 1.5rem; 
+h1 {
+  font-size: 1.5rem;
 }
 
-h2 { 
-    font-size: 1.25rem; 
+h2 {
+  font-size: 1.25rem;
 }
 
 section {
-	padding: var(--spacer-double);
+  padding: var(--spacer-double);
 }
 
-:is(h1, h2,):first-child {
-	margin-top: 0;
+:is(h1, h2, ):first-child {
+  margin-top: 0;
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 
-
 .header__language {
-	background-color: var(--accent);
-	text-align: right;
-	padding: var(--spacer);
+  background-color: var(--accent);
+  text-align: right;
+  padding: var(--spacer);
 }
 
 .header__language a {
-	margin-right: var(--spacer);
-	text-decoration: none;
-	font-size: 1.25rem;
-	color: black;
+  margin-right: var(--spacer);
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: black;
 }
 
 .header__language a:hover,
 .header__language a:focus {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .header__language a:visited {
-	color: black;
+  color: black;
 }
 
-
 .header__logo {
-	font-size: 2rem;
-	font-weight: bold;
-	text-shadow: 0 2px 7px rgb(131, 158, 132);
-	padding: var(--spacer);
-	flex: 0 0 100%;
-	vertical-align: middle;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 2px 7px rgb(131, 158, 132);
+  padding: var(--spacer);
+  flex: 0 0 100%;
+  vertical-align: middle;
 }
 
 .header__inner {
-	display: flex;
-	padding: var(--spacer);
-	align-items: center;
-	justify-content: space-between;
-	vertical-align: middle;
+  display: flex;
+  padding: var(--spacer);
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
 }
 
 .menu__checkbox {
-	position: absolute;
-	left: -9999px;
+  position: absolute;
+  left: -9999px;
 }
 
 .menu__list {
-	list-style: none;
-	display: none;
-	margin: 0;
-	padding: 0;
-	font-size: 1.5rem;
+  list-style: none;
+  display: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
 }
 
 .menu__item {
-	border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .menu__link {
-	display: block;
-	padding: var(--spacer);
-	text-decoration: none;
-	color: black;
+  display: block;
+  padding: var(--spacer);
+  text-decoration: none;
+  color: black;
 }
 
 .menu__link:hover,
 .pricing__link:hover {
-background-color: var(--accent);
+  background-color: var(--accent);
 }
 
 .menu__toggler {
-	cursor: pointer;
-	font-size: 1.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .header__image {
-	height: 200px;
-	background-image: url(/Images/Jaras/Shoulder_massage.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 80% 40%;
-	margin-bottom: var(--spacer-double);
+  height: 200px;
+  background-image: url(/Images/Jaras/Shoulder_massage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80% 40%;
+  margin-bottom: var(--spacer-double);
 }
-
 
 .testimonials__selection,
 .contact__title {
-	background-color: var(--accent);
-	border-radius: 0px 50px 10px 0px;
-	padding: var(--spacer);
-	margin-top: var(--spacer-double);
+  background-color: var(--accent);
+  border-radius: 0px 50px 10px 0px;
+  padding: var(--spacer);
+  margin-top: var(--spacer-double);
 }
 
 .testimonials__name::after {
-	content: "";
-	display: block;
-	width: 150px;
-	background-color: black;
-	height: 1px;
+  content: "";
+  display: block;
+  width: 150px;
+  background-color: black;
+  height: 1px;
 }
 
-
 .glide__arrow {
-	font-size: 2rem;
-	margin-top: 170px;
+  font-size: 2rem;
+  margin-top: 170px;
 }
 
 .service {
-	display: block;
+  display: block;
 }
 
 .service__image {
- 	width: 100%;
-	max-width: 300px;
-	object-fit: cover;
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
 }
 
 .other-services li {
-	line-height: var(--spacer-double);
+  line-height: var(--spacer-double);
 }
 
-
 .pricing {
-	text-align: center;
-	padding-bottom: var(--spacer-double);
+  text-align: center;
+  padding-bottom: var(--spacer-double);
 }
 
 .pricing__massages,
 .pricing__lessons {
-	border-spacing: 0;
-	margin: auto;
-	width: 100%;
-	max-width: 300px;
-	padding-bottom: var(--spacer);
+  border-spacing: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 300px;
+  padding-bottom: var(--spacer);
 }
 
 th,
 td {
-    text-align: left;
-    border-bottom: 1px solid black;
-    padding: var(--spacer);
+  text-align: left;
+  border-bottom: 1px solid black;
+  padding: var(--spacer);
 }
 
 .pricing__price {
-	text-align: right;
-	border-radius: 0px 30px 0px 0px;
+  text-align: right;
+  border-radius: 0px 30px 0px 0px;
 }
 
 th {
-	background-color: var(--accent);
+  background-color: var(--accent);
 }
 
 .pricing__special-info {
-	font-style: italic;
-	padding-top: var(--spacer-double);
+  font-style: italic;
+  padding-top: var(--spacer-double);
 }
 
 .pricing__link {
-	padding-top: var(--spacer);
-	padding-bottom: var(--spacer);
+  padding-top: var(--spacer);
+  padding-bottom: var(--spacer);
 }
 
-
 .about__content {
-	grid-column: span 2;
+  grid-column: span 2;
 }
 
 .about__image {
-	height: 100%;
-	width: 100%;
-	min-height: 400px;
-	max-width: 350px;
-	background-image: url(/Images/Jaras/Jaroslava_Drobna.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50%;
-	margin: auto;
-	margin-bottom: var(--spacer-double);
+  height: 100%;
+  width: 100%;
+  min-height: 400px;
+  max-width: 350px;
+  background-image: url(/Images/Jaras/Jaroslava_Drobna.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin: auto;
+  margin-bottom: var(--spacer-double);
 }
 
-
 .contact__grid h1 {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .contact {
-	padding-top: 0;
+  padding-top: 0;
 }
 
 .contact__title {
-	margin-top: 0;
-	margin-bottom: var(--spacer-double);
-	padding-top: var(--spacer-double);
-
+  margin-top: 0;
+  margin-bottom: var(--spacer-double);
+  padding-top: var(--spacer-double);
 }
 
-
 .footer__image {
-	height: 80px;
-	object-fit: cover;
-	margin: var(--spacer) var(--spacer-double) var(--spacer) 0;
+  height: 80px;
+  object-fit: cover;
+  margin: var(--spacer) var(--spacer-double) var(--spacer) 0;
 }
 
 .contact__title a,
 .footer__title a,
 .pricing__link {
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .footer {
-	margin-top: var(--spacer-double);
-	background-color: var(--accent);
-	padding: var(--spacer-double);
+  margin-top: var(--spacer-double);
+  background-color: var(--accent);
+  padding: var(--spacer-double);
 }
 
-
-
 @media screen and (max-width: 799px) {
-	.menu__checkbox:checked ~ .menu__list {
-		display: block;
-		}
-	
-	}
-	
+  .menu__checkbox:checked ~ .menu__list {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 800px) {
+  .header__image {
+    background-position: 0% 45%;
+    height: 350px;
+  }
 
-	.header__image {
-		background-position: 0% 45%;
-		height: 350px;
-	}
+  .menu__list {
+    display: flex;
+  }
 
-	.menu__list {
-		display: flex;
-	}
+  .menu__toggler {
+    display: none;
+  }
 
-	.menu__toggler {
-		display: none;
-	}
+  .menu__item {
+    border-bottom: 0;
+  }
 
-	.menu__item {
-		border-bottom: 0;
-	}
+  .menu__item:not(:last-child) {
+    border-right: 1px solid black;
+  }
 
-	.menu__item:not(:last-child) {
-		border-right: 1px solid black;
-	}
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacer-double);
+    padding-bottom: var(--spacer-double);
+  }
 
-	.grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: var(--spacer-double);
-		padding-bottom: var(--spacer-double);
-	}
+  .service {
+    display: flex;
+    padding-bottom: var(--spacer-double);
+  }
 
-	.service {
-		display: flex;
-		padding-bottom: var(--spacer-double);
-	}
+  .service:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
 
-	.service:nth-child(odd) {
-		flex-direction: row-reverse;
-	}
+  .service:nth-child(odd) .service__image {
+    padding-left: var(--spacer-double);
+  }
 
-	.service:nth-child(odd) .service__image {
-		padding-left: var(--spacer-double);
-	}
+  .service:nth-child(even) .service__image {
+    padding-right: var(--spacer-double);
+  }
 
-	.service:nth-child(even) .service__image {
-		padding-right: var(--spacer-double);
-	}
+  .pricing__massages,
+  .pricing__lessons {
+    max-width: 400px;
+  }
 
-	.pricing__massages,
-	.pricing__lessons {
-		max-width: 400px;
-	}
+  .about__image {
+    min-width: 300px;
+    max-height: 500px;
+    margin: auto;
+  }
 
-	.about__image {
-		min-width: 300px;
-		max-height: 500px;
-		margin: auto;
-	}
+  .footer__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacer-double);
+  }
 
-	.footer__grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: var(--spacer-double);
-	}
-	
-	.footer__grid-column {
-		margin: var(--spacer);
-	}
+  .footer__grid-column {
+    margin: var(--spacer);
+  }
 }
