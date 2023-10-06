@@ -17,7 +17,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 18px;
   line-height: var(--spacer-double);
 }
@@ -158,21 +158,12 @@ section {
 
 .service {
   display: block;
-  /* display: flex;
-  flex-wrap: wrap;
-  padding: var(--spacer-double);
-  border: 1px solid #ccc;
-  background-color: #fff;
-  margin-bottom: var(--spacer-double); */
 }
 
 .service__image {
   width: 100%;
   max-width: 300px;
   object-fit: cover;
-  /* flex: 0 0 100%;
-  max-width: 100%;
-  height: auto; */
 }
 
 .other-services li {
@@ -309,15 +300,15 @@ th {
     padding-bottom: var(--spacer-double);
   }
 
-  .services:nth-child(odd) {
+  .service:nth-child(odd) {
     flex-direction: row-reverse;
   }
 
-  .services:nth-child(odd) .service__image {
+  .service:nth-child(odd) .service__image {
     padding-left: var(--spacer-double);
   }
 
-  .services:nth-child(even) .service__image {
+  .service:nth-child(even) .service__image {
     padding-right: var(--spacer-double);
   }
 
