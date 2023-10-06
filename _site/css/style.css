@@ -157,22 +157,22 @@ section {
 }
 
 .service {
-  /* display: block; */
-  display: flex;
+  display: block;
+  /* display: flex;
   flex-wrap: wrap;
   padding: var(--spacer-double);
   border: 1px solid #ccc;
   background-color: #fff;
-  margin-bottom: var(--spacer-double);
+  margin-bottom: var(--spacer-double); */
 }
 
 .service__image {
-  /* width: 100%;
+  width: 100%;
   max-width: 300px;
-  object-fit: cover; */
-  flex: 0 0 100%;
+  object-fit: cover;
+  /* flex: 0 0 100%;
   max-width: 100%;
-  height: auto;
+  height: auto; */
 }
 
 .other-services li {
