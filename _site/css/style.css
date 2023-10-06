@@ -117,6 +117,7 @@ section {
 }
 
 .menu__link:hover,
+.menu__link:active,
 .pricing__link:hover {
   background-color: var(--accent);
 }
